@@ -14,11 +14,12 @@ public class VersionUtils {
         if (Bukkit.getVersion().contains("1.14")) return Version.V1_14;
         if (Bukkit.getVersion().contains("1.15")) return Version.V1_15;
         if (Bukkit.getVersion().contains("1.16")) return Version.V1_16;
+        if (Bukkit.getVersion().contains("1.17")) return Version.V1_17;
         return Version.UNKNOWN;
     }
 
     public enum Version {
-        UNKNOWN(0),
+        UNKNOWN(Integer.MAX_VALUE),
         V1_8(1),
         V1_9(2),
         V1_10(3),
@@ -27,7 +28,8 @@ public class VersionUtils {
         V1_13(6),
         V1_14(7),
         V1_15(8),
-        V1_16(9);
+        V1_16(9),
+        V1_17(10);
 
         private final int ID;
 
