@@ -10,12 +10,12 @@ import java.util.Locale;
 public class LatestGlowEnchantment extends Enchantment {
 
     public LatestGlowEnchantment() {
-        super(new NamespacedKey("MegaBukkit".toLowerCase(Locale.ROOT), "Glow".toLowerCase(Locale.ROOT)));
+        super(new NamespacedKey("CustomCrates".toLowerCase(Locale.ROOT), "CustomCratesGlow".toLowerCase(Locale.ROOT)));
     }
 
     @Override
     public String getName() {
-        return "Glow";
+        return "CustomCratesGlow";
     }
 
     @Override

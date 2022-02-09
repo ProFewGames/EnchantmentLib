@@ -15,6 +15,7 @@ public class VersionUtils {
         if (Bukkit.getVersion().contains("1.15")) return Version.V1_15;
         if (Bukkit.getVersion().contains("1.16")) return Version.V1_16;
         if (Bukkit.getVersion().contains("1.17")) return Version.V1_17;
+        if (Bukkit.getVersion().contains("1.18")) return Version.V1_18;
         return Version.UNKNOWN;
     }
 
@@ -29,7 +30,8 @@ public class VersionUtils {
         V1_14(7),
         V1_15(8),
         V1_16(9),
-        V1_17(10);
+        V1_17(10),
+        V1_18(11);
 
         private final int ID;
 
